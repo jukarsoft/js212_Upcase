@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head id="head">
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script>
+		var textoUsuario = 'Camión'
+		var textoCorregido = textoUsuario.toUpperCase();   
+		textoCorregido = textoCorregido.replace(/[ÁÀÄÂ]/, "A");    
+		textoCorregido = textoCorregido.replace(/[ÉÈËÊ]/, "E");    
+		textoCorregido = textoCorregido.replace(/[ÍÌÏÎ]/, "I");    
+		textoCorregido = textoCorregido.replace(/[ÓÒÖÔ]/, "O");   
+		textoCorregido = textoCorregido.replace(/[ÚÙÜÛ]/, "U"); 
+		document.write(textoCorregido + '<br>') 
+		texto = 'En un lugar de la mancha de cuyo nombre no quiero acrodarme'  
+		//Opcionalmente podemos indicar: 
+		//i → para que sea indiferente de mayúsculas/minúsculas 
+		//g → encuentra todas las coincidencias en vez de solo la primera 
+		//m → encuentra coincidencias en más de una línea 
+		buscar=texto.match(/man/i);    
+		alert(buscar);
+	</script>
+</head>
+<body id="selector">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro  dolores unde commodi, ipsa excepturi eveniet distinctio ut. Obcaecati qui, accusantium iste inventore deserunt repellat eos, nesciunt nihil nulla. Obcaecati.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consequuntur dolores unde commodi, ipsa excepturi eveniet distinctio ut. Obcaecati qui, accusantium iste inventore deserunt repellat eos, nesciunt nihil nulla. Obcaecati.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consequuntur dolores unde commodi, ipsa excepturi eveniet distinctio ut. Obcaecati qui, accusantium iste inventore deserunt repellat eos, nesciunt nihil nulla. Obcaecati.
+	<br>	
+<img src="img/media2.jpg" alt="">
+
+</body>
+</html>
